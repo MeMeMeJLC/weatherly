@@ -21,8 +21,8 @@ function success(position) {
         url : weather,
         dataType : "jsonp",
         success : function(data) {
-            var location =data['location']['city'];
-            var temp = data['current_observation']['temp_f'];
+            var location =data['location']["city"];
+            var temp = data['current_observation']['temp_c'];
             var img = data['current_observation']['icon_url'];
             var desc = data['current_observation']['weather'];
             var wind = data['current_observation']['wind_string'];
