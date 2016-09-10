@@ -27,13 +27,19 @@ function success(position) {
             var desc = data['current_observation']['weather'];
             var wind = data['current_observation']['wind_kph'];
             var gust = data['current_observation']['wind_gust_kph'];
-        
+            var reading_location = data['current_observation']['city'];
+            var observation_time = data['current_observation']['observation_time'];
+
+
             //setting the spans to the correct parameters
             $('#location').html(location);
             $('#temp').html(temp);
             $('#desc').html(desc);
             $('#wind').html(wind);
             $('#gust').html(wind);
+            $('#reading_location').html(reading_location);
+            $('#observation_time').html(observation_time);
+
             //filling the image src attribute with the image url
             $('#img').attr('src', img);
          }
