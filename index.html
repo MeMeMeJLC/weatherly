@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodify</title>
+        <!--Boostrap's CSS-->
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container" id="page-container">
+            <h1 id="app-name">
+                <span class="glyphicon glyphicon-cloud"></span> Weatherly
+            </h1>
+            <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
+
+            <h2 id="page-header">
+                Get current weather for a city of your choice.
+            </h2>
+            <div id="forecast">
+                <h1>Weather at <span id="location"> </span></h1>
+
+                <p>It is currently <span id="temp"> </span>ªF with <span id="desc"> </span></p>
+                <p>Wind: <span id="wind"></span></p>
+             </div>
+        </div>
+
+        <!--jQuery Script-->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <!--Bootstrap Script-->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Custom Script-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
