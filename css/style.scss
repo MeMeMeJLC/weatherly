@@ -1,0 +1,13 @@
+$padding: 6px;
+
+h6 {
+    margin: 0;
+    padding: $padding;
+    list-style: none;
+    text-align: right;
+    color: pink;
+  }
+
+  span {
+    padding: $padding 12px;
+  }
