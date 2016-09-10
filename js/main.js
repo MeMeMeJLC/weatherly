@@ -18,7 +18,7 @@ function success(position) {
     var weather = "http://api.wunderground.com/api/” + api_key + ”/forecast/geolookup/conditions/q/" + Geo.lat + "," + Geo.lng + ".json";
 
     $.ajax({
-        url : Weather,
+        url : weather,
         dataType : "jsonp",
         success : function(data) {
             var location =data['location']['city'];
