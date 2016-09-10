@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moodify</title>
+        <title>Weatherly</title>
         <!--Boostrap's CSS-->
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!--Custom CSS-->
@@ -20,9 +20,13 @@
             <div id="forecast">
                 <h1>Weather at <span id="location"> </span></h1>
 
-                <p>It is currently <span id="temp"> </span>ªC with <span id="desc"> </span></p>
-                <p>Wind: <span id="wind"></span></p>
+                <p>It is currently <span id="temp"> </span>&deg;C with <span id="desc"> </span></p>
+                <p>Wind speed: <span id="wind">kph</span> Wind gusts: <span id="gust">kph</span></p>
+                <div id="imgdiv">
+                    <img id="img" src=""/>
+                </div>
              </div>
+
         </div>
 
         <!--jQuery Script-->
