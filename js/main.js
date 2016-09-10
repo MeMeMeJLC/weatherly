@@ -15,7 +15,7 @@ function success(position) {
       Geo.lng = position.coords.longitude;
 
     var api_key = '31b66c553f1a25dc';
-    var weather = "http://api.wunderground.com/api/” + api_key + ”/forecast/geolookup/conditions/q/" + Geo.lat + "," + Geo.lng + ".json";
+    var weather = "https://api.wunderground.com/api/” + api_key + ”/forecast/geolookup/conditions/q/" + Geo.lat + "," + Geo.lng + ".json";
 
     $.ajax({
         url : weather,
