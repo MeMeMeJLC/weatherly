@@ -15,13 +15,13 @@ function success(position) {
       Geo.lng = position.coords.longitude;
 
     var api_key = '31b66c553f1a25dc';
-    var weather = "https://api.wunderground.com/api/” + api_key + ”/forecast/geolookup/conditions/q/" + Geo.lat + "," + Geo.lng + ".json";
+    var weather = "https://api.wunderground.com/api/" + api_key + "/forecast/geolookup/conditions/q/" + Geo.lat + "," + Geo.lng + ".json";
 
     $.ajax({
         url : weather,
         dataType : "jsonp",
         success : function(data) {
-            var location =data['location']["city"];
+            var location =data['location']['city'];
             var temp = data['current_observation']['temp_c'];
             var img = data['current_observation']['icon_url'];
             var desc = data['current_observation']['weather'];
